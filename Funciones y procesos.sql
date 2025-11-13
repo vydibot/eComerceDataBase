@@ -357,7 +357,7 @@ CREATE OR REPLACE FUNCTION fn_consultar_detalle_pedido(p_id_pedido INT)
 RETURNS TABLE (
     id_pedido INT,
     fecha_pedido TIMESTAMP,
-    estado_pedido VARCHAR,
+    estado_pedido estado_pedido, -- <-- ¡AQUÍ ESTÁ EL CAMBIO!
     id_cliente INT,
     nombre_cliente VARCHAR,
     email_cliente VARCHAR,
@@ -372,7 +372,7 @@ BEGIN
     SELECT 
         ped.id_pedido,
         ped.fecha_pedido,
-        ped.estado,
+        ped.estado, -- Esta columna es de tipo 'estado_pedido'
         cli.id_cliente,
         cli.nombre,
         cli.email,
@@ -388,10 +388,10 @@ BEGIN
 END;
 $$;
 
+DROP FUNCTION fn_consultar_detalle_pedido(integer)
+
 -- Para usarla:
--- SELECT * FROM fn_consultar_detalle_pedido(1);
-
-
+ SELECT fn_consultar_detalle_pedido(1);
 
 --CREAR CONSULTA DE TOTAL DE PRODUCTO AL BUSCAR EN CADA PLANTA DISPONIBLE 
 
