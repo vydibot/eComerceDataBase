@@ -413,8 +413,6 @@ END;
 $$;
 
 -- Para usarla:
--- SELECT fn_consultar_stock_total_producto(1);
-
 
 
 

@@ -43,7 +43,6 @@ ALTER TABLE cliente ALTER COLUMN telefono TYPE telefono
 
 	
 
-	
 
 	
 	

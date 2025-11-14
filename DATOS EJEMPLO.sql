@@ -205,3 +205,18 @@ INSERT INTO DETALLE_PEDIDO (id_detalle_pedido, id_pedido, id_producto, cantidad)
 
 -- Pedido 15 (Laura - Cancelado)
 (24, 15, 10, 1);
+
+
+--AGREGAR CONTRASEÑAS 
+
+UPDATE CLIENTE SET contrasena = 'P@ssw0rd1A' WHERE id_cliente = 1;
+UPDATE CLIENTE SET contrasena = 'S3gur4K-2B' WHERE id_cliente = 2;
+UPDATE CLIENTE SET contrasena = 'M1Cl4v3#3C' WHERE id_cliente = 3;
+UPDATE CLIENTE SET contrasena = 'D4t0s_R4D' WHERE id_cliente = 4;
+UPDATE CLIENTE SET contrasena = 'L0g1n*E5' WHERE id_cliente = 5;
+UPDATE CLIENTE SET contrasena = 'A6CcfF!t' WHERE id_cliente = 6;
+UPDATE CLIENTE SET contrasena = 'Ww7PpnL?' WHERE id_cliente = 7;
+UPDATE CLIENTE SET contrasena = 'Zz8TtrM@' WHERE id_cliente = 8;
+UPDATE CLIENTE SET contrasena = 'B9GghV#' WHERE id_cliente = 9;
+UPDATE CLIENTE SET contrasena = 'K0XxyY$' WHERE id_cliente = 10;
+

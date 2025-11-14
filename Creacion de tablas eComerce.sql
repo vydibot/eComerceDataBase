@@ -14,6 +14,7 @@ nombre varchar,
 apellido varchar,
 email varchar,
 telefono varchar
+contrasena varchar
 );
 
 CREATE TABLE DIRECCION (
